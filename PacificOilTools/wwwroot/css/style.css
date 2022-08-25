@@ -1,0 +1,34 @@
+﻿#service-title {
+    font-size: 3rem;
+    margin-top: 2%;
+    padding: 2%;
+    color: white;
+}
+
+.nav-item {
+    padding: 0 5px;
+}
+
+.slide-img {
+    height: 650px;
+}
+
+#services-container {
+    background-color: #CC704B;
+    margin-bottom: 2%;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}

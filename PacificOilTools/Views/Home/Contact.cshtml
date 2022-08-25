@@ -1,0 +1,33 @@
+﻿@{
+	ViewData["Title"] = "Contact";
+}
+
+<div class="container text-light pt-4 min-vh-100"> 
+	<div class="row ">
+		<div class="col-6">
+			<h1>Contact</h1>
+			<form asp-controller="Home" asp-action="Contact">
+		    <div class="mb-3">
+				<label for="name" class="form-label">Name</label>
+				<input type="text" class="form-control" id="name" name="name" placeholder="Please write your name"/>
+		    </div>
+		    <div class="mb-3">
+				<label for="email" class="form-label">Email</label>
+				<input type="email" class="form-control" id="email" name="email" placeholder="example@email.com">
+			</div>
+		    <div class="mb-3">
+				<label for="message" class="form-label">Message</label>
+				<textarea class="form-control" id="message" name="message" rows="3" placeholder="Write your message"></textarea>
+			</div>
+			<button type="button" class="btn btn-primary">Send</button>
+	       </form>
+		</div>
+		<div class="col-6">
+			<h1 class="mb-3">Address</h1>
+			<div class="map-responsive">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1739.9471655258044!2d-92.96896049787435!3d17.985636401068717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85edd783d1d8dcff%3A0x5e65108573d18eb7!2sPacific%20Oil%20Tools!5e0!3m2!1ses!2smx!4v1661312342261!5m2!1ses!2smx" width="600" height="450" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</div>
+
+</div>
